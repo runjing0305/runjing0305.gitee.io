@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Big Yellow World</title>
+  
+  
+  <link href="https://runjing0305.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://runjing0305.github.io/"/>
+  <updated>2024-10-17T10:32:23.883Z</updated>
+  <id>https://runjing0305.github.io/</id>
+  
+  <author>
+    <name>Big Yellow</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>let&#39;s try RL</title>
+    <link href="https://runjing0305.github.io/2024/10/17/let-s-try-RL/"/>
+    <id>https://runjing0305.github.io/2024/10/17/let-s-try-RL/</id>
+    <published>2024-10-17T10:32:23.000Z</published>
+    <updated>2024-10-17T10:32:23.883Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MarkdownNote</title>
+    <link href="https://runjing0305.github.io/2024/10/16/MarkdownNote/"/>
+    <id>https://runjing0305.github.io/2024/10/16/MarkdownNote/</id>
+    <published>2024-10-16T10:14:51.000Z</published>
+    <updated>2024-10-16T11:34:31.031Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;学习的B站视频 【8分钟让你快速掌握Markdown】 &lt;a href=&quot;https://www.bilibili.com/video/BV1JA411h7Gw/?share_source=copy_web&amp;vd_source=0041946a1d1e95c1229f468</summary>
+      
+    
+    
+    
+    
+    <category term="Markdown" scheme="https://runjing0305.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ML</title>
+    <link href="https://runjing0305.github.io/2024/10/15/ML/"/>
+    <id>https://runjing0305.github.io/2024/10/15/ML/</id>
+    <published>2024-10-15T12:07:22.000Z</published>
+    <updated>2024-10-15T12:07:22.482Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://runjing0305.github.io/2024/10/14/hello-world/"/>
+    <id>https://runjing0305.github.io/2024/10/14/hello-world/</id>
+    <published>2024-10-14T05:57:14.223Z</published>
+    <updated>2024-10-14T05:57:14.223Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
