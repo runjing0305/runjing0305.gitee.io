@@ -84,4 +84,15 @@
     <url>/2024/10/17/let-s-try-RL/</url>
     <content><![CDATA[]]></content>
   </entry>
+  <entry>
+    <title>CVRP</title>
+    <url>/2024/10/22/CVRP/</url>
+    <content><![CDATA[<h1 id="带容量约束的路径规划问题-CVRP"><a href="#带容量约束的路径规划问题-CVRP" class="headerlink" title="带容量约束的路径规划问题 CVRP"></a>带容量约束的路径规划问题 CVRP</h1><h2 id="消除子环路的建模方法"><a href="#消除子环路的建模方法" class="headerlink" title="消除子环路的建模方法"></a>消除子环路的建模方法</h2><ol>
+<li>DFJ约束<br>思想 ：</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>VRP</tag>
+      </tags>
+  </entry>
 </search>

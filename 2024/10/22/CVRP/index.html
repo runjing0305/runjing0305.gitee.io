@@ -19,24 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"runjing0305.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Big Yellow World">
-<meta property="og:url" content="https://runjing0305.github.io/archives/2024/10/index.html">
+    <meta name="description" content="带容量约束的路径规划问题 CVRP消除子环路的建模方法 DFJ约束思想 ：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CVRP">
+<meta property="og:url" content="https://runjing0305.github.io/2024/10/22/CVRP/index.html">
 <meta property="og:site_name" content="Big Yellow World">
+<meta property="og:description" content="带容量约束的路径规划问题 CVRP消除子环路的建模方法 DFJ约束思想 ：">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-10-22T12:23:47.000Z">
+<meta property="article:modified_time" content="2024-10-24T10:46:51.553Z">
 <meta property="article:author" content="Big Yellow">
-<meta property="article:tag" content="JAVA,pthon,ML,DRL,optomozation">
+<meta property="article:tag" content="VRP">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://runjing0305.github.io/archives/2024/10/">
+<link rel="canonical" href="https://runjing0305.github.io/2024/10/22/CVRP/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/2024/10/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://runjing0305.github.io/2024/10/22/CVRP/","path":"2024/10/22/CVRP/","title":"CVRP"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>归档 | Big Yellow World</title>
+<title>CVRP | Big Yellow World</title>
   
 
 
@@ -70,7 +74,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Big Yellow World</h1>
+      <p class="site-title">Big Yellow World</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -123,7 +127,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -136,6 +140,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%A6%E5%AE%B9%E9%87%8F%E7%BA%A6%E6%9D%9F%E7%9A%84%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E9%97%AE%E9%A2%98-CVRP"><span class="nav-number">1.</span> <span class="nav-text">带容量约束的路径规划问题 CVRP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B6%88%E9%99%A4%E5%AD%90%E7%8E%AF%E8%B7%AF%E7%9A%84%E5%BB%BA%E6%A8%A1%E6%96%B9%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">消除子环路的建模方法</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -169,129 +174,135 @@
 
     </div>
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 5 篇日志。 继续努力。</span>
-      </div>
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2024<span class="collection-year-count">5</span></span>
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://runjing0305.github.io/2024/10/22/CVRP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Big Yellow">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Big Yellow World">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="CVRP | Big Yellow World">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          CVRP
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-10-22 20:23:47" itemprop="dateCreated datePublished" datetime="2024-10-22T20:23:47+08:00">2024-10-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-10-24 18:46:51" itemprop="dateModified" datetime="2024-10-24T18:46:51+08:00">2024-10-24</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>34</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="带容量约束的路径规划问题-CVRP"><a href="#带容量约束的路径规划问题-CVRP" class="headerlink" title="带容量约束的路径规划问题 CVRP"></a>带容量约束的路径规划问题 CVRP</h1><h2 id="消除子环路的建模方法"><a href="#消除子环路的建模方法" class="headerlink" title="消除子环路的建模方法"></a>消除子环路的建模方法</h2><ol>
+<li>DFJ约束<br>思想 ：</li>
+</ol>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-22T20:23:47+08:00"
-              content="2024-10-22">
-          10-22
-        </time>
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>请我一杯咖啡吧！</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.jpg" alt="Big Yellow 微信">
+        <span>微信</span>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/22/CVRP/" itemprop="url">
-            <span itemprop="name">CVRP</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-17T18:32:23+08:00"
-              content="2024-10-17">
-          10-17
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/17/let-s-try-RL/" itemprop="url">
-            <span itemprop="name">let's try RL</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-16T18:14:51+08:00"
-              content="2024-10-16">
-          10-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/16/MarkdownNote/" itemprop="url">
-            <span itemprop="name">MarkdownNote</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-15T20:07:22+08:00"
-              content="2024-10-15">
-          10-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/15/ML/" itemprop="url">
-            <span itemprop="name">ML</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-14T13:57:14+08:00"
-              content="2024-10-14">
-          10-14
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/14/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-
-    </div>
   </div>
-  
-  
-  
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/VRP/" rel="tag"># VRP</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/10/17/let-s-try-RL/" rel="prev" title="let's try RL">
+                  <i class="fa fa-angle-left"></i> let's try RL
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
 
 </div>
   </main>

@@ -6,7 +6,7 @@
   <link href="https://runjing0305.github.io/atom.xml" rel="self"/>
   
   <link href="https://runjing0305.github.io/"/>
-  <updated>2024-10-17T10:32:23.883Z</updated>
+  <updated>2024-10-24T10:46:51.553Z</updated>
   <id>https://runjing0305.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CVRP</title>
+    <link href="https://runjing0305.github.io/2024/10/22/CVRP/"/>
+    <id>https://runjing0305.github.io/2024/10/22/CVRP/</id>
+    <published>2024-10-22T12:23:47.000Z</published>
+    <updated>2024-10-24T10:46:51.553Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;带容量约束的路径规划问题-CVRP&quot;&gt;&lt;a href=&quot;#带容量约束的路径规划问题-CVRP&quot; class=&quot;headerlink&quot; title=&quot;带容量约束的路径规划问题 CVRP&quot;&gt;&lt;/a&gt;带容量约束的路径规划问题 CVRP&lt;/h1&gt;&lt;h2 id=&quot;消除子环路</summary>
+      
+    
+    
+    
+    
+    <category term="VRP" scheme="https://runjing0305.github.io/tags/VRP/"/>
+    
+  </entry>
   
   <entry>
     <title>let&#39;s try RL</title>
